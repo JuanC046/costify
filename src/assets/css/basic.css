@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --color-white: #EFF5F5;
+    --color-black: #0A0F10;
+    --color-gray: #555B5C;
+    --color-primario-10: #0F1224;
+    --color-primario-20: #1F2547;
+    --color-primario-30: #2E376B;
+    --color-primario-40: #3D4A8F;
+    --color-primario-50: #4D5CB2;
+    --color-primario-60: #707DC2;
+    --color-primario-70: #949DD1;
+    --color-primario-80: #B8BEE0;
+    --color-primario-90: #DBDEF0;
+    --color-secundario-10: #141E1F;
+    --color-secundario-20: #273C3F;
+    --color-secundario-30: #3B5A5E;
+    --color-secundario-40: #4E787E;
+    --color-secundario-50: #62979D;
+    --color-secundario-60: #81ABB1;
+    --color-secundario-70: #A1C0C4;
+    --color-secundario-80: #C0D5D8;
+    --color-secundario-90: #E0EAEB;
+    --fuente: 'Noto Sans', sans-serif;
+
+
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
