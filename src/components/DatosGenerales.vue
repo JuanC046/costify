@@ -16,7 +16,7 @@
     display: flex;
     background-color: var(--color-primario-80);
     border-radius: 16px;
-    width:auto;
+    width:70%;
 }
 .datosGenerales__saldo, .datosGenerales__presupuesto{
     padding: 0.5rem;
@@ -42,6 +42,13 @@
 .datosGenerales-valor{
     color: var(--color-primario-10);
     font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .datosGenerales{
+        width: 100%;
+    }
+    
 }
 </style>
 

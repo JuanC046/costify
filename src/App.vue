@@ -1,8 +1,4 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
@@ -10,6 +6,7 @@
 #app {
   font-family: var(--fuente);
   margin: 3rem 1.5rem;
+  height: 100vh;
 }
 
 nav {
