@@ -41,7 +41,7 @@ body {
 }
 .botonPrimario:hover {
     background-color: var(--color-primario-40);
-    border: 2px solid var(--color-primario-50);
+    border: 3px solid var(--color-primario-70);
 }
 
 .botonSecundario {
@@ -51,5 +51,5 @@ body {
 }
 .botonSecundario:hover {
     background-color: var(--color-primario-70);
-    border: 2px solid var(--color-primario-50);
+    border: 3px solid var(--color-primario-50);
 }
