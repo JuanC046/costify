@@ -19,7 +19,7 @@
     width:70%;
 }
 .datosGenerales__saldo, .datosGenerales__presupuesto{
-    padding: 0.5rem;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;

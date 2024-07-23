@@ -10,6 +10,13 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/HomeView.vue')
     }
+  },
+  {
+    path: '/recordExpense',
+    name: 'recordExpense',
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/RecordExpenseView.vue')
+    }
   }
 ]
 

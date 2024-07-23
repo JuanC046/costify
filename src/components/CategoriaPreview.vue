@@ -20,7 +20,7 @@ export default {
 .categoriaPreview {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 8px;
     text-align: left;
     background-color: var(--color-primario-90);
     border-radius: 16px;

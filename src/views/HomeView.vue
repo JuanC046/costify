@@ -2,24 +2,32 @@
     <div class="homeView">
         <header class="homeView__header">
             <button class="homeView__header__botonHistorial">
-                <img src="../assets/historial.png" alt="imagen historial gastos">
+                <img
+                    src="../assets/historial.png"
+                    alt="imagen historial gastos"
+                />
             </button>
             <Titulo class="homeView__header__titulo" />
         </header>
-        <DatosGenerales :saldo="999" :presupuesto="999" :moneda="'COP'" />
-        <ul class="homeView__categorias">
-            <li class="homeView__categorias__item" v-for="(value, key) in items">
-                <CategoriaPreview
-                    :categoria="key"
-                    :presupuesto="value"
-                    :moneda="'COP'"
-                />
-            </li>
-        </ul>
-        <div class="homeView__botones">
-            <Boton class="botonPrimario" :texto="'Registrar Gasto'" />
-            <Boton class="botonSecundario" :texto="'Agregar categoría'" />
-        </div>
+        <main class="homeView__main">
+            <DatosGenerales :saldo="999" :presupuesto="999" :moneda="'COP'" />
+            <ul class="homeView__categorias">
+                <li
+                    class="homeView__categorias__item"
+                    v-for="(value, key) in items"
+                >
+                    <CategoriaPreview
+                        :categoria="key"
+                        :presupuesto="value"
+                        :moneda="'COP'"
+                    />
+                </li>
+            </ul>
+            <div class="homeView__botones">
+                <Boton class="botonPrimario" :texto="'Registrar Gasto'" />
+                <Boton class="botonSecundario" :texto="'Agregar categoría'" />
+            </div>
+        </main>
     </div>
 </template>
 
@@ -53,8 +61,8 @@ export default {
 </script>
 
 <style>
-.homeView{
-    gap: 2rem;
+.homeView {
+    gap: 32px;
     height: 100vh;
 }
 .homeView__header {
@@ -73,13 +81,20 @@ export default {
     justify-self: center;
     grid-column: 2;
 }
+.homeView__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+}
 .homeView__categorias {
     display: flex;
     flex-direction: column;
     padding: 0;
     width: 100%;
     text-align: center;
-    gap: 1.5rem;
+    gap: 24px;
     height: 50vh;
     overflow-y: auto;
     scrollbar-width: none;
@@ -96,19 +111,18 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 32px;
 }
 .homeView__botones {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 16px;
 }
 
 @media screen and (max-width: 768px) {
     .homeView__header__botonHistorial {
-        justify-self:left;
+        justify-self: left;
     }
 }
-
 </style>
