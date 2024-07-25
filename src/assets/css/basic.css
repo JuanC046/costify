@@ -3,6 +3,10 @@
     --color-white: #EFF5F5;
     --color-black: #0A0F10;
     --color-gray: #555B5C;
+    --color-warning: #FFC107;
+    --color-danger: #DC3545;
+    --color-success: #28A745;
+    --color-info: #17A2B8;
     --color-primario-10: #0F1224;
     --color-primario-20: #1F2547;
     --color-primario-30: #2E376B;
