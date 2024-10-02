@@ -1,7 +1,7 @@
 <template>
     <div class="createCategoryView">
         <header class="createCategoryView__header">
-            <Titulo />
+            <Titulo id="goHome"/>
         </header>
         <main class="createCategoryView__main">
             <form action="" class="createCategoryView__main__form">
@@ -47,6 +47,11 @@
 <script>
 import Titulo from "@/components/Titulo.vue";
 import Boton from "@/components/Boton.vue";
+
+
+const goHome = () => {
+    this.$router.push("/");
+};
 export default {
     name: "CreateCategoryView",
     components: {

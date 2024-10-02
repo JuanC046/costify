@@ -24,8 +24,8 @@
                 </li>
             </ul>
             <div class="homeView__botones">
-                <Boton class="botonPrimario" :texto="'Registrar Gasto'" />
-                <Boton class="botonSecundario" :texto="'Agregar categoría'" />
+                <Boton class="botonPrimario" :texto="'Registrar Gasto'" @click="goRecordExpense"/>
+                <Boton class="botonSecundario" :texto="'Agregar categoría'" @click="goCreateCategory"/>
             </div>
         </main>
     </div>
@@ -56,6 +56,14 @@ export default {
                 Otros: 999,
             },
         };
+    },
+    methods: {
+        goRecordExpense() {
+            this.$router.push("/recordExpense");
+        },
+        goCreateCategory() {
+            this.$router.push("/createCategory");
+        },
     },
 };
 </script>
